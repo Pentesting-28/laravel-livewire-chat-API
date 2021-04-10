@@ -1,23 +1,22 @@
 {{-- Main Sidebar Container --}}
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 {{-- Brand Logo --}}
-<a href="index3.html" class="brand-link">
-  <img src="https://d1hdtc0tbqeghx.cloudfront.net/wp-content/uploads/2020/07/27141257/laravel-livewire.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-       style="opacity: .8">
+<a href="{{ route('dashboard') }}" class="brand-link">
+  <img src="https://austenc.gallerycdn.vsassets.io/extensions/austenc/livewire-docs/2.1.0/1613766441082/Microsoft.VisualStudio.Services.Icons.Default" alt="AdminLTE Logo" class="brand-image img-circle ">
   <span class="brand-text font-weight-light">WELCOME</span>
 </a>
 
 {{-- Sidebar --}}
 <div class="sidebar">
   {{-- Sidebar user panel (optional) --}}
-  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+{{--   <div class="user-panel mt-3 pb-3 mb-3 d-flex">
     <div class="image">
       <img src="https://austenc.gallerycdn.vsassets.io/extensions/austenc/livewire-docs/2.1.0/1613766441082/Microsoft.VisualStudio.Services.Icons.Default" class="img-circle elevation-2" alt="User Image">
     </div>
     <div class="info">
       <a href="#" class="d-block">Alex</a>
     </div>
-  </div>
+  </div> --}}
 
   {{-- Sidebar Menu --}}
   <nav class="mt-2">
@@ -25,7 +24,7 @@
       {{-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library --}}
       {{-- <li class="nav-item has-treeview menu-open"> --}}
-        <a href="#" class="nav-link active">
+        <a href="{{ route('dashboard') }}" class="nav-link active">
           <i class="nav-icon fas fa-tachometer-alt"></i>
           <p>
             Dashboard
@@ -297,21 +296,21 @@
         </a>
       </li> --}}
       <li class="nav-item has-treeview">
-        <a href="#" class="nav-link">
+        <a href="{{ route('notification.index') }}" class="nav-link">
           <i class="nav-icon far fa-envelope"></i>
           <p>
             NOTIFICACIONES
-            <i class="fas fa-angle-left right"></i>
+            {{-- <i class="fas fa-angle-left right"></i> --}}
           </p>
         </a>
-        <ul class="nav nav-treeview">
+{{--        <ul class="nav nav-treeview">
           <li class="nav-item">
             <a href="pages/mailbox/mailbox.html" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
-              <p>1 Example whatsapp</p>
+              <p>Crear</p>
             </a>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
             <a href="pages/mailbox/compose.html" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>2 Example whatsapp</p>
@@ -322,7 +321,7 @@
               <i class="far fa-circle nav-icon"></i>
               <p>3 Example whatsapp</p>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </li>
 
