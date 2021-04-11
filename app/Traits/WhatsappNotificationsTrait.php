@@ -8,8 +8,8 @@ trait WhatsappNotificationsTrait
     protected function setting()
     {
         return [
-            'apiURL' => 'https://eu250.chat-api.com/instance233324/',
-            'token'  => 'ik763opb538l8qjs'
+            'apiURL' => '',
+            'token'  => ''
         ];
     }
 
